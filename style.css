@@ -1,0 +1,124 @@
+/* barra de tarefas*/
+:root{
+    --azul:#527ed7;
+    --preto:#1a1b1c;
+    --vermelho:#d04957;
+    --amarelo:#ebd348;
+    --cinza:#e4e5e7;
+}
+
+body{
+   
+    background:url(img/textura6.png);
+    
+    background-size: cover;
+    
+}
+header{
+    background-color: var(--vermelho);
+    
+}
+
+
+.logo{
+    display: inline;
+    width:300px;
+    height:100px;
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+color: black;
+text-decoration: none;
+font-weight: bold;
+font-size:25px;
+margin: 0 0 0 2em;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+     color:var(--preto);
+     transition: all 0.2s;
+}
+/* Fim da barra de tarefas*/
+
+
+
+.main {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo{
+    display: inline-block;
+    font-size:33px;
+    margin: 1em 0;
+    background-color:var(--preto);
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    padding:0.5em;
+    border-radius:5px;
+    
+}
+.banner{
+
+    background: url(img/one.jpg);
+    width: 100%;
+    height:65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.8;
+ 
+    
+}
+.conteudo{
+   
+    height:80vh;
+}
+.conteudo p{
+    font-size:20px;
+    text-align: left;
+    line-height: 1.5em;
+}
+h2{
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+}
+.gif{
+   vertical-align: top;
+    float:left;
+    width:15%;
+    height:20%;
+    margin: 10px 20px;
+  
+}
+@media(max-width:768px){
+    
+    .main, .titulo,.gif, .conteudo p{
+       width: auto;
+       margin: 0;
+    }
+    nav, ul, li{
+        flex-wrap: wrap;flex-direction: column;
+}
+
+}

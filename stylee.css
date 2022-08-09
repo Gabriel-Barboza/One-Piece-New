@@ -1,0 +1,32 @@
+.logo{
+    display: inline;
+    width:300px;
+    height:100px;
+}
+
+header{
+   
+    background-color:darkorange;
+}
+.caixa{
+    position: relative;
+    width:940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 2em;
+    right: 10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size:30px
+}
