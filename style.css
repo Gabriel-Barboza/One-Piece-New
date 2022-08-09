@@ -185,6 +185,7 @@ header li{
 }
 .explicacao{
     flex-direction: column;
+    height: auto;
 }
 .explicacao div{
     width: auto;
