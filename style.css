@@ -163,34 +163,60 @@ footer img:hover{
 
 @media(max-width:968px){
     
-    .main, .titulo, .conteudo p{
+    .main, .conteudo p{
        width: auto;
        margin: 0;
     }
-   header nav ,ul, li{
-        flex-wrap: wrap;flex-direction: column;
+   header nav {
+    flex-direction: column;
+
 }
-header ul{
-    display: inline-block;
-    
-    width: 100%;
-}
+
+    header ul {
+        
+         flex-wrap: wrap;
+         flex-direction: column;
+         width: 100%;
+         
+    }
 header li{
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    align-items: center;
+    padding:10px;
+     border-bottom: 1px solid black;
+    
+}
+header ul li a{
+    margin:10px 0;
+    
     display: block;
-    text-align: auto;
-    border-bottom: 1px solid;
-    margin-bottom:1em;
+   
+}
+.titulo{
+    margin: 0.5em;
+    width: auto;
+}
+.gif{
+    display: none;
+}
+.conteudo h2{
+    margin: 1em 0 0 1em;
+}
+}
+.conteudo p{
+    width: auto;
+    text-align: justify;
+    margin: 1em;
 }
 .explicacao{
     flex-direction: column;
-    height: auto;
+    height:auto;
 }
 .explicacao div{
-    height: auto;
     width: auto;
     text-align:justify;
+    height: auto;
+    
 }
 .video{
     width: 100%;
@@ -199,4 +225,3 @@ header li{
 
 
 
-}
