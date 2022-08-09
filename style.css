@@ -188,6 +188,7 @@ header li{
     height: auto;
 }
 .explicacao div{
+    height: auto;
     width: auto;
     text-align:justify;
 }
