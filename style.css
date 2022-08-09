@@ -1,4 +1,5 @@
 /* barra de tarefas*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 :root{
     --azul:#527ed7;
     --preto:#1a1b1c;
@@ -10,7 +11,7 @@
 body{
    
     background:url(img/textura6.png);
-    
+    font-family: 'Inter', sans-serif;
     background-size: cover;
     
 }
@@ -24,6 +25,10 @@ header{
     display: inline;
     width:300px;
     height:100px;
+}
+.logo:hover{
+    transform: scale(1.01);
+
 }
 
 nav{
@@ -63,6 +68,7 @@ nav ul li a:hover{
     width: 940px;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .titulo{
@@ -91,12 +97,14 @@ nav ul li a:hover{
 }
 .conteudo{
    
-    height:80vh;
+    
+    margin: 0 0 3em 0;
 }
 .conteudo p{
+   
     font-size:20px;
     text-align: left;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 h2{
     font-size: 33px;
@@ -111,14 +119,82 @@ h2{
     margin: 10px 20px;
   
 }
+.explicacao{
+    display: flex;
+    background-color: var(--vermelho);
+    width:100%;
+    
+    align-items: center;
+    text-align: left;
+    font-size:20px;
+    
+}
+.explicacao div{
+    width:50%;
+    margin:1em;
+    height:100vh;
+    
+}
+.explicacao div p{
+    line-height: 1.6em;
+}
+.explicacao div h3{
+    font-size:33px;
+}
+.video{
+    width: 50%;
+    height: 100vh;
+    margin:1em;
+
+    border: none;
+}
+
+footer{
+    width: 100%;
+    background-color:var(--preto);
+    text-align:center;
+    color: var(--cinza);
+    padding:2em 0;
+    font-size:12px
+}
+footer img:hover{
+    transform: scale(1.1);
+}
+
 @media(max-width:768px){
     
-    .main, .titulo,.gif, .conteudo p{
+    .main, .titulo, .conteudo p{
        width: auto;
        margin: 0;
     }
-    nav, ul, li{
+   header nav ,ul, li{
         flex-wrap: wrap;flex-direction: column;
 }
+header ul{
+    display: inline-block;
+    
+    width: 100%;
+}
+header li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: auto;
+    border-bottom: 1px solid;
+    margin-bottom:1em;
+}
+.explicacao{
+    flex-direction: column;
+}
+.explicacao div{
+    width: auto;
+    text-align:justify;
+}
+.video{
+    width: 100%;
+    height: 35vh;
+}
+
+
 
 }
